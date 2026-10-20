@@ -1,0 +1,47 @@
+# --- Secrets (never bake into image layers) ---
+.env
+.env.local
+.env.*.local
+
+# --- VCS / local tooling ---
+.git
+.gitignore
+.github
+
+# --- Go binaries & build output ---
+/server
+/bin/
+/dist/
+tmp/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# --- Coverage & profiling ---
+coverage.out
+coverage.html
+*.coverprofile
+__debug_bin
+*.prof
+
+# --- Go workspace (optional local) ---
+go.work
+go.work.sum
+
+# --- IDE & OS ---
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Compose / docs (not needed inside dev image) ---
+docker-compose.yml
+docker-compose.*.yml
+README
+*.md

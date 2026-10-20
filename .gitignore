@@ -1,0 +1,43 @@
+# --- Secrets ---
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# --- Go binaries & tests ---
+/server
+/bin/
+/dist/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# --- Coverage ---
+coverage.out
+coverage.html
+*.coverprofile
+
+# --- Go workspace (optional local) ---
+go.work
+go.work.sum
+
+# --- Air (live reload) ---
+tmp/
+
+# --- IDE ---
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Debug ---
+__debug_bin
+*.prof
